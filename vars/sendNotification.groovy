@@ -3,7 +3,7 @@ def call(String buildStatus = 'STARTED') {
   buildStatus = buildStatus ?: 'SUCCESS'
 
   // Default values
-  def subject = "'Jenkins Pipeline ${buildStatus}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]"
+  def subject = "Jenkins Pipeline ${buildStatus}"
   def details = "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n ${currentBuild.currentResult}: Job ${env.JOB_NAME} \n ${currentBuild.currentResult}: ${env.BUILD_TAG}"
 
  emailext (
