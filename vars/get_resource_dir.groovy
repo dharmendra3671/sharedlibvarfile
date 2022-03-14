@@ -3,11 +3,10 @@ import java.nio.file.Path
 import java.nio.file.Paths
 
 class ScriptSourceUri {
-    @SourceURI
-    static URI uri
+    @SourceURI URI sourceUri
 }
 
 def call() {
-    Path scriptLocation = Paths.get(ScriptSourceUri.uri)
+    Path scriptLocation = Paths.get(ScriptSourceUri.sourceUri)
     return scriptLocation.getParent().getParent().resolve('resources/Scripts').toString()
 }
