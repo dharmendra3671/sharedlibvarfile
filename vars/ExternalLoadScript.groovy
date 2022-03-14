@@ -4,4 +4,3 @@ def call(Map config = [:]) {
         loadScript(name:i)
         python "./i${config.name}"
     }
-
