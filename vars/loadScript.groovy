@@ -1,4 +1,4 @@
 def call(Map config = [:]) { 
-  def scriptcontents = libraryResource "${config.name}"    
+  def scriptcontents = libraryResource "Scripts/${config.name}"    
   writeFile file: "${config.name}", text: scriptcontents 
 } 
