@@ -4,14 +4,8 @@ import sys
 import zipfile
 import os
 import glob
-from pathlib import Path
 
-parent = Path("config.json")
-parent.exists(), parent.is_dir()
-
-p = parent / "config.json"
-p.exists()
-with open(p,'r') as filesdata:
+with open('config.json','r') as filesdata:
     filedata=json.load(filesdata)
 for file_ele in filedata['data1']:
         #print("file element",f_ele)
