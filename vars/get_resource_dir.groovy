@@ -8,6 +8,6 @@ class ScriptSourceUri {
 }
 
 def call() {
-    Path scriptLocation = Paths.get(ScriptSourceUri.Uri)
+    Path scriptLocation = Paths.get(ScriptSourceUri.uri)
     return scriptLocation.getParent().resolve('resources/Scripts').toString()
 }
