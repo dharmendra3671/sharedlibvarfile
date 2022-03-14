@@ -4,7 +4,7 @@ import sys
 import zipfile
 import os
 import glob
-with open('resources/Scripts/config.jsonconfig.json','r') as filesdata:
+with open('resources/Scripts/config.json','r') as filesdata:
     filedata=json.load(filesdata)
 for file_ele in filedata['data1']:
         #print("file element",f_ele)
