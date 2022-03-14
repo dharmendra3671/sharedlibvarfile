@@ -1,7 +1,7 @@
 def call(Map config = [:]) {
-    
-    loadScript(name: "Pythonzip.py")
-    loadScript(name: "sharelibjf-zip.py")
-    python "./Pythonzip.py"
-   }
-sh "./hello-world.sh ${config.name} ${config.dayOfWeek}"
+    def filelst=["Pythonzip.py","sharelibjf-zip.py"]
+    for i in filelst:
+        loadScript(name:i)
+        python "./i${config.name}"
+    }
+
