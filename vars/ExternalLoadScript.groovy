@@ -1,4 +1,5 @@
 def call(Map config = [:]) {
-    loadScript(name: '')
+    loadScript(name: "Pythonzip.py")
+    loadScript(name: ""
    
 }
