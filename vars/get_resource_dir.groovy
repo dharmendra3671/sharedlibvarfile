@@ -4,6 +4,6 @@
   
      final jsonContent = libraryResource('config.json')
      writeFile (file: 'config.json', text: jsonContent)
-     bat "python config.json"
+     //bat "python config.json"
 }
 
