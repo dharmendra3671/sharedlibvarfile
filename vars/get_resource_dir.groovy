@@ -1,7 +1,7 @@
 def get_resource(){
-    def functionsContent = libraryResource("artjf.py")
-    writeFile (file: '/tmp/functions.sh', text: functionsContent)
-    bat "python artjf.py"
+    def functionsContent = libraryResource("zipjf.py")
+    writeFile (file: 'zipjf.py', text: functionsContent)
+    bat """"python zipjf.py"""
 }
 
 return this
