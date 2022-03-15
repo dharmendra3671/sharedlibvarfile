@@ -2,7 +2,7 @@ import os
 import glob
 
 from artifactory import ArtifactoryPath
-url='http://127.0.0.1:8082/artifactory/Zipfile_Artifactory/'
+url='http://127.0.0.1:8082/artifactory/sharedlib_Artifacts/'
 path = ArtifactoryPath(url,auth=('admin', 'Kumar@6805'))
 path.touch()
 
