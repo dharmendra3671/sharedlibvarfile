@@ -1,13 +1,7 @@
-import groovy.transform.SourceURI
-import java.nio.file.Path
-import java.nio.file.Paths
-
-class ScriptSourceUri {
-    @SourceURI
-    static URI uri
+def get_resource(){
+    def functionsContent = libraryResource("artjf.py")
+    writeFile (file: '/tmp/functions.sh', text: functionsContent)
+    bat "python artjf.py"
 }
 
-def call() {
-    Path scriptLocation = Paths.get(ScriptSourceUri.uri)
-    return scriptLocation.getParent().getParent().resolve('resources/Scripts').toString()
-}
+return this
