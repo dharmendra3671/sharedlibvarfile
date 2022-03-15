@@ -1,6 +1,6 @@
  def runMyPython(){
-     final pythonContent = libraryResource('zipjf.py')
-     writeFile (file: 'zipjf.py', text: pythonContent)
+     final pythonContent = libraryResource('Pythonzip.py')
+     writeFile (file: 'Pythonzip.py', text: pythonContent)
      bat "python zipjf.py"
 }
 
