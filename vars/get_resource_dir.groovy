@@ -1,4 +1,4 @@
-// for deploying artifacts. 
+// for deploying... 
 def runMyPython(){
      def pythonContent = libraryResource('sharelibjf-zip.py')
      writeFile (file: 'sharelibjf-zip.py', text: pythonContent)
